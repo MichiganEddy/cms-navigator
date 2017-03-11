@@ -1,0 +1,12 @@
+<h1> {{currentUser.username}}</h1>
+<h3><strong>Name: </strong>{{currentUser.firstName}} {{currentUser.lastName}}</h3>
+<p><strong>Email: </strong>{{currentUser.email}}</p>
+<p><strong>Username: </strong>{{currentUser.username}}</p>
+<div class="container editable cloneable" id="websiteSummary">
+  <h3>{{website.name}}</h3>
+  <p><strong>URL: </strong>{{website.url}}</p>
+  <p><strong>Pages: </strong></p>
+  <ul>
+    <li *ngFor="let page of website.pages" >{{page.name}}</li>
+  </ul>
+</div>
