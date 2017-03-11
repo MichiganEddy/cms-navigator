@@ -1,3 +1,5 @@
+import { AppModule } from './app.module';
+
 export class User {
 
      public firstName: string;
